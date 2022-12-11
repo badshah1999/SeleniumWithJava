@@ -27,14 +27,12 @@ public class HandlingInputs {
         System.out.println("Color is:"+color);
 
         //Getting height and width of the button
-
         Rectangle rect = driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-backpack']")).getRect();
         Dimension dime  = rect.getDimension();
         System.out.println(dime.getHeight());
         System.out.println(dime.getWidth());
 
         //Check button is enabled
-
         Boolean bool = driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-backpack']")).isEnabled();
         System.out.println(bool);
 
